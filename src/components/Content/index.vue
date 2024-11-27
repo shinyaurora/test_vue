@@ -4,7 +4,7 @@ import PostItem from './PostItem.vue'
 </script>
 
 <template>
-    <div class="p-8 flex-1 mr-8">
+    <div class="p-8 flex-1">
         <ContentHeader />
         <div class="my-8">
             <PostItem 

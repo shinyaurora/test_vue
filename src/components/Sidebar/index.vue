@@ -4,7 +4,7 @@ import SummaryItem from './SummaryItem.vue'
 </script>
 
 <template>
-    <div class="border border-[#27272A] rounded-xl p-8 w-[400px]">
+    <div class="border border-[#27272A] rounded-xl p-8 lg:w-[400px] w-full">
         <div class="">
             <h2 class="text-lg text-light flex items-center">
                 <span class="mr-4">

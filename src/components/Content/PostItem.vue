@@ -2,7 +2,7 @@
     <div class="flex justify-between py-6">
         <div class="flex">
             <div class="w-12 h-12 relative mr-3">
-                <img src="/avatar.png" class="w-full h-full" />
+                <img src="/avatar.png" class="w-12 h-auto max-w-12" />
                 <img :src="status_icon" class="absolute bottom-0 right-0"/>
             </div>
             <div class="flex flex-col">
@@ -29,7 +29,7 @@
                 </div>
             </div>
         </div>
-        <span class="text-dark text-sm">2m ago</span>
+        <div class="text-dark text-sm w-20 text-right">2m ago</div>
     </div>
 </template>
 

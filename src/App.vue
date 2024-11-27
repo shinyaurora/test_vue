@@ -5,10 +5,10 @@ import Sidebar from './components/Sidebar/index.vue'
 </script>
 
 <template>
-  <div class="w-full h-screen bg-[#121212]">
+  <div class="w-full h-screen bg-[#121212] overflow-auto">
     <div class="container mx-auto">
       <Header />
-      <div class="w-full flex">
+      <div class="w-full lg:flex">
         <Content />
         <Sidebar />
       </div>

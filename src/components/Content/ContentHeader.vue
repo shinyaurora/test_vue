@@ -1,5 +1,5 @@
 <template>
-    <div class="flex items-center justify-between">
+    <div class="flex items-center md:justify-between flex-col md:flex-row">
         <div class="flex items-center">
             <img src="/avatar.png" class="w-40 h-40 mr-4" />
             <div class="flex flex-col justify-between">
@@ -25,12 +25,12 @@
                 </div>
             </div>
         </div>
-        <div class="">
-            <div class="border border-darker rounded-lg py-2 px-4 my-6 flex items-center">
+        <div class="flex md:flex-col flex-row">
+            <div class="border border-darker rounded-lg py-2 px-4 my-6 flex items-center cursor-pointer mx-2">
                 <img src="/target.svg" class="mr-2" />
                 <span class="text-dark text-sm">Invite to Challenge</span>
             </div>
-            <div class="border border-darker rounded-lg py-2 px-4 my-6 flex items-center">
+            <div class="border border-darker rounded-lg py-2 px-4 my-6 flex items-center cursor-pointer mx-2">
                 <img src="/message.svg" class="mr-2" />
                 <span class="text-dark text-sm">Invite to Challenge</span>
             </div>
