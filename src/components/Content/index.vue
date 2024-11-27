@@ -32,7 +32,7 @@ import PostItem from './PostItem.vue'
             />
         </div>
         <div class="text-dark">
-            <span>See More</span>
+            <span class=" cursor-pointer">See More</span>
         </div>
     </div>
 </template>

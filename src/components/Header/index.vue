@@ -1,6 +1,6 @@
 <template>
     <div class="flex items-center justify-between px-4 py-8">
-        <div class="shadow-md shadow-[#3F3F45] bg-[#27272A] px-3 py-1 rounded flex items-center">
+        <div class="shadow-md shadow-[#3F3F45] bg-[#27272A] px-3 py-1 rounded flex items-center cursor-pointer">
             <img src="/left-arrow.png" />
             <span class="text-white ml-2 text-sm">Go Back</span>
         </div>
