@@ -33,30 +33,34 @@
     </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { defineComponent, PropType } from "vue"
+
+export default defineComponent({
     props: {
         name: {
-            type: String
+            type: String as PropType<string>,
+            required: true
         },
         title: {
-            type: String
+            type: String as PropType<string>,
+            required: true
         },
         is_copyable: {
-            type: Boolean,
+            type: Boolean as PropType<boolean>,
             default: true
         },
         show_comment: {
-            type: Boolean,
+            type: Boolean as PropType<boolean>,
             default: false
         },
         comment: {
-            type: String
+            type: String as PropType<string | null>
         },
         status_icon: {
-            type: String,
+            type: String as PropType<string>,
             default: "status1.svg"
         }
     }
-}
+})
 </script>

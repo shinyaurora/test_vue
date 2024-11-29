@@ -18,25 +18,29 @@
     </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { defineComponent, PropType } from 'vue';
+export default defineComponent({
     props: {
         title: {
-            type: String
+            type: String as PropType<string>,
+            default: ""
         },
         amount_usd: {
-            type: String
+            type: Number as PropType<number>,
+            required: true
         },
         amount_btc: {
-            type: String
+            type: Number as PropType<number>,
+            required: true
         },
         show_rise: {
-            type: Boolean,
+            type: Boolean as PropType<boolean>,
             default: false
         },
         rise_amount: {
-            type: String
+            type: Number as PropType<number | null>,
         }
     }
-}
+})
 </script>
