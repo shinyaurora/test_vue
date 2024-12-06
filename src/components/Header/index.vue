@@ -7,7 +7,7 @@
         <div class="flex items-center">
             <div class="flex items-center">
                 <img src="/images/icons/icon_currency_satoshi.svg" class="mr-2" />
-                <div class="flex border rounded-lg flex-start w-8 h-5 cursor-pointer" @click="toggleCurrencyState">
+                <div class="flex border rounded-lg flex-start w-8 h-5 cursor-pointer" @click="toggleCurrencyType">
                     <div class="rounded-lg w-4 h-full bg-[#A1A1A9]" />
                 </div>
                 <img src="/images/icons/icon_currency_dollar.svg" class="ml-2" />
@@ -26,16 +26,16 @@ import { reactive } from 'vue';
 export default {
     setup() {
         const state = reactive({
-            currency_state: "sat"
+            currencyType: "sat"
         })
 
-        const toggleCurrencyState = () => {
-            state.currency_state = state.currency_state === "sat" ? "dol" : "sat";
+        const toggleCurrencyType = () => {
+            state.currencyType = state.currencyType === "sat" ? "dol" : "sat";
         }
 
         return {
             state,
-            toggleCurrencyState
+            toggleCurrencyType
         }
     }
 }

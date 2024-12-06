@@ -18,15 +18,15 @@ import SummaryItem from './SummaryItem.vue'
         </div>
         <PriceItem 
             title="Investments"
-            amount_usd="$48,000"
-            amount_btc="38,786 SAT"
+            :usdAmount="48000"
+            :btcAmount="38786"
         />
         <PriceItem 
             title="Returns"
-            :show_rise="true"
-            rise_amount="112.51%"
-            amount_usd="$56,000"
-            amount_btc="43,712 SAT"
+            :isPriceIncreaseRateVisible="true"
+            :priceIncreaseRate="112.51"
+            :usdAmount="56000"
+            :btcAmount="43712"
         />
         <SummaryItem />
     </div>

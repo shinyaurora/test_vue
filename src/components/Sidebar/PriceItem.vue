@@ -2,45 +2,50 @@
     <div class="border border-darker rounded-xl p-4 my-6">
         <div class="flex justify-between items-center mb-5">
             <span class="text-light text-sm">{{title}}</span>
-            <div class="text-[#55B5A6] flex items-center" v-if="show_rise">
+            <div class="text-[#55B5A6] flex items-center" v-if="isPriceIncreaseRateVisible">
                 <img src="/images/icons/icon_arrow_nw.svg" class="mr-2"/>
-                <span>{{rise_amount}}</span>
+                <span>{{priceIncreaseRate}}%</span>
             </div>
         </div>
         <div class="flex justify-between items-center my-1">
             <span class="text-dark">USD</span>
-            <span class="text-light font-semibold text-xl">{{amount_usd}}</span>
+            <span class="text-light font-semibold text-xl">$ {{formatNumber(usdAmount)}}</span>
         </div>
         <div class="flex justify-between items-center my-1">
             <span class="text-dark">BTC</span>
-            <span class="text-light font-semibold text-xl">{{amount_btc}}</span>
+            <span class="text-light font-semibold text-xl">{{formatNumber(btcAmount)}} SAT</span>
         </div>
     </div>
 </template>
 
 <script lang="ts">
+import { formatNumber } from '../..//utils/functions';
 import { defineComponent, PropType } from 'vue';
+
 export default defineComponent({
     props: {
         title: {
             type: String as PropType<string>,
             default: ""
         },
-        amount_usd: {
+        usdAmount: {
             type: Number as PropType<number>,
             required: true
         },
-        amount_btc: {
+        btcAmount: {
             type: Number as PropType<number>,
             required: true
         },
-        show_rise: {
+        isPriceIncreaseRateVisible: {
             type: Boolean as PropType<boolean>,
             default: false
         },
-        rise_amount: {
+        priceIncreaseRate: {
             type: Number as PropType<number | null>,
         }
+    },
+    methods: {
+        formatNumber
     }
 })
 </script>
