@@ -10,10 +10,10 @@
         <div class="flex justify-between my-2">
             <div class="flex items-center text-[12px] text-dark">
                 <span class="mr-2">Market ID</span>
-                <img src="/dup.svg" />
+                <img src="/images/icons/icon_duplicate.svg" />
             </div>
             <div class="flex items-center text-light text-sm">
-                <img src="/expand.svg" />
+                <img src="/images/icons/icon_expand.svg" />
                 <span class="ml-1">172468372928</span>
             </div>
         </div>

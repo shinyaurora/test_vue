@@ -3,7 +3,7 @@
         <div class="flex justify-between items-center mb-5">
             <span class="text-light text-sm">{{title}}</span>
             <div class="text-[#55B5A6] flex items-center" v-if="show_rise">
-                <img src="/rise.svg" class="mr-2"/>
+                <img src="/images/icons/icon_arrow_nw.svg" class="mr-2"/>
                 <span>{{rise_amount}}</span>
             </div>
         </div>

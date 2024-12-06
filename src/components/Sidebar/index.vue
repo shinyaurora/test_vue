@@ -10,7 +10,7 @@ import SummaryItem from './SummaryItem.vue'
                 <span class="mr-4">
                     Investments and Returns 
                 </span>
-                <img src="/lock.svg" />
+                <img src="/images/icons/icon_lock.svg" />
             </h2>
             <p class="text-dark text-sm mt-2 mb-4">
                 This account is private / This account has turned off sharing details.

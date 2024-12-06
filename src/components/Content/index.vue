@@ -9,24 +9,24 @@ import PostItem from './PostItem.vue'
         <div class="my-8">
             <PostItem 
                 name="ric29dhd" 
-                status_icon="/status3.svg"
+                status_icon="/images/icons/icon_status_bell.svg"
                 title="Who will be the winner of the 2024 Presidential Election?" 
             />
             <PostItem 
                 name="ric29dhd" 
-                status_icon="/status3.svg"
+                status_icon="/images/icons/icon_status_bell.svg"
                 title="What types of BTC-linked financial products will be available by the end of 2025?? "
             />
             <PostItem 
                 name="ric29dhd" 
-                status_icon="/status2.svg"
+                status_icon="/images/icons/icon_status_message.svg"
                 title=" What types of BTC-linked financial products will be available by the end of 2025?? "
                 :show_comment="true"
                 comment="I am pretty sure this is going to be big."
             />
             <PostItem 
                 name="ric29dhd" 
-                status_icon="/status1.svg"
+                status_icon="/images/icons/icon_status_razor.svg"
                 title="Who will be the winner of the 2024 Presidential Election? "
                 :is_copyable="false"
             />

@@ -2,7 +2,7 @@
     <div class="flex justify-between py-6">
         <div class="flex">
             <div class="w-12 h-12 relative mr-3">
-                <img src="/avatar.png" class="w-12 h-auto max-w-12" />
+                <img src="/images/avatars/avatar_user_default.png" class="w-12 h-auto max-w-12" />
                 <img :src="status_icon" class="absolute bottom-0 right-0"/>
             </div>
             <div class="flex flex-col">
@@ -13,17 +13,17 @@
                 <div class="mt-2" v-if="show_comment">
                     <p class="text-sm text-dark mb-2">{{comment}}</p>
                      <div class="text-dark text-sm flex items-center mr-6">
-                        <img src="/message.svg" class="mr-2" />
+                        <img src="/images/icons/icon_message.svg" class="mr-2" />
                         <span>Comment</span>
                     </div>
                 </div>
                 <div class="flex items-center mt-1" v-if="!show_comment">
                     <div class="text-dark text-sm flex items-center mr-6">
-                        <img src="/expand.svg" class="mr-2" />
+                        <img src="/images/icons/icon_expand.svg" class="mr-2" />
                         <span>Bet Now</span>
                     </div>
                     <div class="text-dark text-sm flex items-center" v-if="is_copyable">
-                        <img src="/copy.svg" class="mr-2" />
+                        <img src="/images/icons/icon_copy.svg" class="mr-2" />
                         <span>Copy trade</span>
                     </div>
                 </div>
